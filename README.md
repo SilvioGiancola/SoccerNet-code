@@ -1,2 +1,1 @@
-# SoccerNet-code
-SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos
+# SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos
