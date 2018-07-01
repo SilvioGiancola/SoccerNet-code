@@ -32,6 +32,7 @@ def ReadLabels(game_folder):
 
 
 
+
 if __name__ == "__main__": 
 
 	description = 'Read the features and labels'

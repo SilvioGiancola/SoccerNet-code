@@ -24,6 +24,8 @@ if __name__ == "__main__":
 
 
 	UnpackData(os.path.join(args.input_dir, "All_Labels.zip"), args.output_dir)
+	
+	UnpackData(os.path.join(args.input_dir, "All_Commentaries.zip"), args.output_dir)
 
 	UnpackData(os.path.join(args.input_dir, "All_Features.zip"), args.output_dir)
 
