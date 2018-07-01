@@ -11,6 +11,12 @@
 - Labels: https://drive.google.com/file/d/1em5K3RToGUpCyAnZl6fwzL-Wv5V1o6aC/view?usp=sharing
 - Videos (fill the form): https://goo.gl/forms/HXsBbBw6QFMhLvj13
 
+We recommand to use https://github.com/circulosmeos/gdown.pl to download large files.
+
+Usage:
+
+`./gdown.pl https://drive.google.com/file/d/1em5K3RToGUpCyAnZl6fwzL-Wv5V1o6aC/view?usp=sharing labels.zip`
+
 ## Unzip the data
 This command will create the data structure and unzip the data
 
