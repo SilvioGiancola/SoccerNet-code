@@ -4,12 +4,15 @@ import argparse
 
 
 def UnpackData(path_to_zip_file, directory_to_extract_to):
-	print("Unpacking", path_to_zip_file, "..." )
-	zip_ref = zipfile.ZipFile(path_to_zip_file, 'r')
-	zip_ref.extractall(directory_to_extract_to)
-	zip_ref.close()
-	print("...", path_to_zip_file, "unpacked in", directory_to_extract_to, "folder" )
+	if (os.path.isfile(path_to_zip_file)):
+		print("Unpacking", path_to_zip_file, "..." )
+		zip_ref = zipfile.ZipFile(path_to_zip_file, 'r')
+		zip_ref.extractall(directory_to_extract_to)
+		zip_ref.close()
+		print("...", path_to_zip_file, "unpacked in", directory_to_extract_to, "folder" )
 
+	else: 
+		print("/!\\", path_to_zip_file, "cannot be found", "/!\\")
 
 if __name__ == "__main__":
 
@@ -23,9 +26,7 @@ if __name__ == "__main__":
 	args = p.parse_args()
 
 
-	UnpackData(os.path.join(args.input_dir, "All_Labels.zip"), args.output_dir)
-	
-	UnpackData(os.path.join(args.input_dir, "All_Commentaries.zip"), args.output_dir)
 
-	UnpackData(os.path.join(args.input_dir, "All_Features.zip"), args.output_dir)
-
+	for file in ["All_Features.zip", "All_Labels.zip", "All_Commentaries.zip"]:
+		UnpackData(os.path.join(args.input_dir, file), args.output_dir)
+		
