@@ -6,7 +6,7 @@
 `conda env create -f src/environment.yml`
 
 ## Ensure the zip files are in the "Data" folder
-- Frames Features (ResNET PCA 512): [TBD]
+- Frames Features (ResNET PCA 512): https://drive.google.com/file/d/16BELeg-MO2H9AREdDTfXGgyoqjviCg4c/view?usp=sharing
 - Frames Features (All): [TBD]
 - Labels: https://drive.google.com/file/d/1em5K3RToGUpCyAnZl6fwzL-Wv5V1o6aC/view?usp=sharing
 - Videos (fill the form): https://goo.gl/forms/HXsBbBw6QFMhLvj13
@@ -15,7 +15,8 @@ We recommand to use https://github.com/circulosmeos/gdown.pl to download large f
 
 Usage:
 
-`./gdown.pl https://drive.google.com/file/d/1em5K3RToGUpCyAnZl6fwzL-Wv5V1o6aC/view?usp=sharing labels.zip`
+`./gdown.pl https://drive.google.com/file/d/1em5K3RToGUpCyAnZl6fwzL-Wv5V1o6aC/view?usp=sharing All_Labels.zip`
+`./gdown.pl https://drive.google.com/file/d/16BELeg-MO2H9AREdDTfXGgyoqjviCg4c/view?usp=sharing All_ResNet_PCA_512.zip`
 
 ## Unzip the data
 This command will create the data structure and unzip the data
