@@ -25,11 +25,13 @@ We recommand to use https://github.com/circulosmeos/gdown.pl to download large f
 
 Usage:
 
-`./gdown.pl https://drive.google.com/file/d/10-Y5yqH8YQ0_lvppWPMSLq6SMayuWT4E/view?usp=sharing data/All_Features.zip`
+`./gdown.pl https://drive.google.com/file/d/10-Y5yqH8YQ0_lvppWPMSLq6SMayuWT4E/view?usp=sharing data/SoccerNet_V1.1_Features.zip`
 
-`./gdown.pl https://drive.google.com/file/d/10-Y5yqH8YQ0_lvppWPMSLq6SMayuWT4E/view?usp=sharing data/All_Labels.zip`
+`./gdown.pl https://drive.google.com/file/d/10-Y5yqH8YQ0_lvppWPMSLq6SMayuWT4E/view?usp=sharing data/SoccerNet_V1.1_Labels.zip`
 
-`./gdown.pl https://drive.google.com/file/d/1BgPwrHzuz5WDZqmll9K2koP0k0932TNW/view?usp=sharing data/All_Commentaries.zip`
+`./gdown.pl https://drive.google.com/file/d/1BgPwrHzuz5WDZqmll9K2koP0k0932TNW/view?usp=sharing data/SoccerNet_V1.1_Commentaries.zip`
+
+`idem with the video link (available after agreeing the NDA)`
 
 
 
