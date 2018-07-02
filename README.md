@@ -1,6 +1,6 @@
 # SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos
 
-
+Project page: https://silviogiancola.github.io/SoccerNet/
 
 ## Create the conda environement (Python3)
 `conda env create -f src/environment.yml`
