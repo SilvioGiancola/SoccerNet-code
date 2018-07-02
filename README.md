@@ -11,7 +11,7 @@
 [NDA](https://drive.google.com/file/d/1_e9oZ3rp6hHA2Hm2tjUDMBXYqVrlUKwj/view?usp=sharing)):
 - Frames Features: 
 [[Google Drive]](https://drive.google.com/drive/folders/1qkIeQCGaHg0_CUCHvh3hQFTlq26D20Ts?usp=sharing) 
-[[pre-zipped]](https://drive.google.com/drive/folders/1qkIeQCGaHg0_CUCHvh3hQFTlq26D20Ts?usp=sharing) (119.9GB)
+[[pre-zipped]](https://drive.google.com/file/d/1FDyrfnp8dsF7cd_NyzdTHA-EFIK_TvKK/view?usp=sharing) (119.9GB)
 - Labels: 
 [[Google Drive]](https://drive.google.com/drive/folders/1j95bI6G8q434K22wxWRvz2ymA8FF3rei?usp=sharing) 
 [[pre-zipped]](https://drive.google.com/file/d/10-Y5yqH8YQ0_lvppWPMSLq6SMayuWT4E/view?usp=sharing) (292.9kB)
@@ -25,7 +25,7 @@ We recommand to use https://github.com/circulosmeos/gdown.pl to download large f
 
 Usage:
 
-`./gdown.pl https://drive.google.com/file/d/10-Y5yqH8YQ0_lvppWPMSLq6SMayuWT4E/view?usp=sharing data/SoccerNet_V1.1_Features.zip`
+`./gdown.pl https://drive.google.com/file/d/1FDyrfnp8dsF7cd_NyzdTHA-EFIK_TvKK/view?usp=sharing data/SoccerNet_V1.1_Features.zip`
 
 `./gdown.pl https://drive.google.com/file/d/10-Y5yqH8YQ0_lvppWPMSLq6SMayuWT4E/view?usp=sharing data/SoccerNet_V1.1_Labels.zip`
 
