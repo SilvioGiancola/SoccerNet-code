@@ -10,13 +10,13 @@
 - Videos: fill the [form](https://goo.gl/forms/HXsBbBw6QFMhLvj13) first (links provided after agreeing with the 
 [NDA](https://drive.google.com/file/d/1_e9oZ3rp6hHA2Hm2tjUDMBXYqVrlUKwj/view?usp=sharing)):
 - Frames Features: 
-[[Google Drive]](https://drive.google.com/drive/folders/1qkIeQCGaHg0_CUCHvh3hQFTlq26D20Ts?usp=sharing) 
+[[GoogleDrive]](https://drive.google.com/drive/folders/1qkIeQCGaHg0_CUCHvh3hQFTlq26D20Ts?usp=sharing) 
 [[pre-zipped]](https://drive.google.com/file/d/1FDyrfnp8dsF7cd_NyzdTHA-EFIK_TvKK/view?usp=sharing) (119.9GB)
 - Labels: 
-[[Google Drive]](https://drive.google.com/drive/folders/1j95bI6G8q434K22wxWRvz2ymA8FF3rei?usp=sharing) 
+[[GoogleDrive]](https://drive.google.com/drive/folders/1j95bI6G8q434K22wxWRvz2ymA8FF3rei?usp=sharing) 
 [[pre-zipped]](https://drive.google.com/file/d/10-Y5yqH8YQ0_lvppWPMSLq6SMayuWT4E/view?usp=sharing) (292.9kB)
 - Commentaries: 
-[[Google Drive]](https://drive.google.com/drive/folders/1XD7Kiqw7rsmMn6fYDxN82BdlD_HfkF49?usp=sharing) 
+[[GoogleDrive]](https://drive.google.com/drive/folders/1XD7Kiqw7rsmMn6fYDxN82BdlD_HfkF49?usp=sharing) 
 [[pre-zipped]](https://drive.google.com/file/d/1BgPwrHzuz5WDZqmll9K2koP0k0932TNW/view?usp=sharing) (26.1MB)
  
 
@@ -31,7 +31,7 @@ Usage:
 
 `./gdown.pl https://drive.google.com/file/d/1BgPwrHzuz5WDZqmll9K2koP0k0932TNW/view?usp=sharing data/SoccerNet_V1.1_Commentaries.zip`
 
-`idem with the video link (available after agreeing the NDA)`
+`idem with the video link (provided after agreeing the NDA)`
 
 
 
