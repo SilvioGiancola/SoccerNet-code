@@ -5,6 +5,8 @@
 ## Create the conda environement (Python3)
 `conda env create -f src/environment.yml`
 
+`source activate SoccerNet`
+
 
 ## Ensure the zip files are in the "Data" folder
 - Frames Features (ResNET PCA 512): https://drive.google.com/file/d/16BELeg-MO2H9AREdDTfXGgyoqjviCg4c/view?usp=sharing
@@ -33,6 +35,10 @@ This command will create the data structure and unzip the data
 
 ## Read commentaries for a single game
 `python src/ReadCommentaries.py data france_ligue-1 2016-2017 "Paris SG" "Marseille"`
+
+
+## Loop and read over Train/Valid/Test
+`python src/ReadSplitData.py data src/listgame_Train_300.npy`
 
 
 ## Loop and read over all games
