@@ -114,8 +114,12 @@ dependencies:
 - zlib=1.2.8=3
 - ffmpeg=3.1.3=0
 - pip:
+  - certifi==2018.4.16
+  - chardet==3.0.4
   - ffmpy==0.2.2
   - ffprobe==0.5
+  - gdown==3.5.0
+  - idna==2.7
   - imageio==2.2.0
   - ipython-genutils==0.2.0
   - jupyter-client==5.1.0
@@ -123,6 +127,8 @@ dependencies:
   - jupyter-core==4.3.0
   - prompt-toolkit==1.0.14
   - pytesseract==0.1.7
+  - requests==2.19.1
   - sk-video==1.1.8
-prefix: /home/giancos/anaconda3/envs/Soccer-Detection
+  - urllib3==1.23
+prefix: /home/giancos/anaconda3/envs/SoccerNet
 

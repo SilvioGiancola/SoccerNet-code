@@ -1,3 +1,5 @@
 *.zip
 *.npy
 *.json
+*Videos.csv
+*Videos_HQ.csv
