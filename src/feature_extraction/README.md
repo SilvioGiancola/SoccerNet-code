@@ -6,7 +6,7 @@ We provide generic code to extract the frame features.
 
 ## ResNET
 
-We used ResNET-152 pre-trained on ImageNet available [here](https://drive.google.com/open?id=1sKKUH2Ozawu3epyg3YL6jsQ_f6dPcBJ_) (place the .h5 file into the folder [src/feature_extraction/](src/feature_extraction/)).
+We used ResNET-152 pre-trained on ImageNet available [here](https://drive.google.com/open?id=1sKKUH2Ozawu3epyg3YL6jsQ_f6dPcBJ_) (place the .h5 file into this folder).
 
 - Create and activate feature extraction environment:
 
@@ -22,7 +22,7 @@ We used ResNET-152 pre-trained on ImageNet available [here](https://drive.google
 
 ## C3D
 
-We used C3D pre-trained on Sports1M available [here](https://drive.google.com/open?id=1KxtgwkX_X0sfzJSZFVz8bIIxkufYN5kr) (place the .h5 file into the folder [src/feature_extraction/](src/feature_extraction/)).
+We used C3D pre-trained on Sports1M available [here](https://drive.google.com/open?id=1KxtgwkX_X0sfzJSZFVz8bIIxkufYN5kr) (place the .h5 file into this folder).
 
 - Create and activate feature extraction environment:
 
