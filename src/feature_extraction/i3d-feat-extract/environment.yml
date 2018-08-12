@@ -1,0 +1,97 @@
+name: i3d-feat-extract
+channels:
+- menpo
+- defaults
+dependencies:
+- backports=1.0=py27_0
+- cairo=1.14.8=0
+- cudatoolkit=8.0=1
+- cudnn=5.1.10=cuda8.0_0
+- cycler=0.10.0=py27_0
+- dbus=1.10.20=0
+- decorator=4.1.2=py27_0
+- enum34=1.1.6=py27_0
+- expat=2.1.0=0
+- fontconfig=2.12.1=3
+- freetype=2.5.5=2
+- functools32=3.2.3.2=py27_0
+- get_terminal_size=1.0.0=py27_0
+- glib=2.50.2=1
+- gst-plugins-base=1.8.0=0
+- gstreamer=1.8.0=0
+- h5py=2.7.0=np113py27_0
+- hdf5=1.8.17=2
+- icu=54.1=0
+- ipython=5.3.0=py27_0
+- ipython_genutils=0.2.0=py27_0
+- jbig=2.1=0
+- jpeg=9b=0
+- libffi=3.2.1=1
+- libgcc=5.2.0=0
+- libgfortran=3.0.0=1
+- libiconv=1.14=0
+- libpng=1.6.30=0
+- libtiff=4.0.6=3
+- libxcb=1.12=1
+- libxml2=2.9.4=0
+- matplotlib=2.0.2=np113py27_0
+- mkl=2017.0.3=0
+- networkx=1.11=py27_0
+- numpy=1.13.1=py27_0
+- olefile=0.44=py27_0
+- openssl=1.0.2l=0
+- path.py=10.3.1=py27_0
+- pathlib2=2.3.0=py27_0
+- pcre=8.39=1
+- pexpect=4.2.1=py27_0
+- pickleshare=0.7.4=py27_0
+- pillow=4.2.1=py27_0
+- pip=9.0.1=py27_1
+- pixman=0.34.0=0
+- prompt_toolkit=1.0.15=py27_0
+- ptyprocess=0.5.2=py27_0
+- pycairo=1.10.0=py27_0
+- pygments=2.2.0=py27_0
+- pyparsing=2.2.0=py27_0
+- pyqt=5.6.0=py27_2
+- python=2.7.13=0
+- python-dateutil=2.6.1=py27_0
+- pytz=2017.2=py27_0
+- pywavelets=0.5.2=np113py27_0
+- qt=5.6.2=5
+- readline=6.2=2
+- scandir=1.5=py27_0
+- scikit-image=0.13.0=np113py27_0
+- scipy=0.19.1=np113py27_0
+- setuptools=27.2.0=py27_0
+- simplegeneric=0.8.1=py27_1
+- sip=4.18=py27_0
+- six=1.10.0=py27_0
+- sqlite=3.13.0=0
+- subprocess32=3.2.7=py27_0
+- tk=8.5.18=0
+- tqdm=4.15.0=py27_0
+- traitlets=4.3.2=py27_0
+- wcwidth=0.1.7=py27_0
+- wheel=0.29.0=py27_0
+- xz=5.2.3=0
+- zlib=1.2.11=0
+- pip:
+  - backports.shutil-get-terminal-size==1.0.0
+  - backports.weakref==1.0rc1
+  - bleach==1.5.0
+  - dm-sonnet-gpu==1.10
+  - funcsigs==1.0.2
+  - html5lib==0.9999999
+  - ipdb==0.10.3
+  - ipython-genutils==0.2.0
+  - markdown==2.6.9
+  - mock==2.0.0
+  - pbr==3.1.1
+  - prompt-toolkit==1.0.15
+  - protobuf==3.4.0
+  - sk-video==1.1.8
+  - tensorflow-gpu==1.2.1
+  - werkzeug==0.12.2
+prefix: /home/giancos/anaconda3/envs/i3d-feat-extract
+

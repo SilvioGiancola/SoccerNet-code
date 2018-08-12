@@ -3,3 +3,5 @@
 *.json
 *Videos.csv
 *Videos_HQ.csv
+*.h5
+*/i3d-feat-extract/*

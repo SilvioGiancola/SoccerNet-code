@@ -3,7 +3,7 @@
 Here is the source code to download and use the SoccerNet dataset
 
 
-## Download the data
+# Download the data
 
 We recommand to use https://github.com/wkentaro/gdown to download large files from google drive.
 
@@ -37,6 +37,7 @@ Please use the following script to download automatically the data:
 
 
 
+# Read data
 
 ## Read data for a single game
 `python src/ReadData.py "data/england_epl/2014-2015/2015-05-17 - 18-00 Manchester United 1 - 1 Arsenal"`
@@ -53,3 +54,10 @@ Please use the following script to download automatically the data:
 ## Loop and read over all games
 `python src/ReadAllData.py data`
 
+
+
+
+# Code for Features Extraction from videos
+
+
+See [feature_extraction/](feature_extraction/) for more details.

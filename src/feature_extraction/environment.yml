@@ -1,0 +1,127 @@
+name: Soccer-FeatureExtractor
+channels:
+- menpo
+- defaults
+dependencies:
+- backports=1.0=py36_0
+- backports.weakref=1.0rc1=py36_0
+- bleach=1.5.0=py36_0
+- cudatoolkit=7.5=2
+- cudnn=6.0.21=cuda7.5_0
+- cycler=0.10.0=py36_0
+- dbus=1.10.20=0
+- decorator=4.1.2=py36_0
+- entrypoints=0.2.3=py36_0
+- expat=2.1.0=0
+- fontconfig=2.12.1=3
+- freetype=2.5.5=2
+- glib=2.50.2=1
+- gst-plugins-base=1.8.0=0
+- gstreamer=1.8.0=0
+- h5py=2.7.0=np112py36_0
+- hdf5=1.8.17=2
+- html5lib=0.9999999=py36_0
+- icu=54.1=0
+- ipykernel=4.6.1=py36_0
+- ipython=6.1.0=py36_0
+- ipython_genutils=0.2.0=py36_0
+- ipywidgets=6.0.0=py36_0
+- jbig=2.1=0
+- jedi=0.10.2=py36_2
+- jinja2=2.9.6=py36_0
+- jpeg=8d=2
+- jsonschema=2.6.0=py36_0
+- jupyter=1.0.0=py36_3
+- jupyter_client=5.1.0=py36_0
+- jupyter_console=5.1.0=py36_0
+- jupyter_core=4.3.0=py36_0
+- keras=2.0.5=py36_0
+- libffi=3.2.1=1
+- libgcc=5.2.0=0
+- libgfortran=3.0.0=1
+- libgpuarray=0.6.9=0
+- libiconv=1.14=0
+- libpng=1.6.27=0
+- libprotobuf=3.2.0=0
+- libsodium=1.0.10=0
+- libtiff=4.0.6=2
+- libxcb=1.12=1
+- libxml2=2.9.4=0
+- mako=1.0.6=py36_0
+- markdown=2.6.8=py36_0
+- markupsafe=0.23=py36_2
+- matplotlib=2.0.2=np112py36_0
+- mistune=0.7.4=py36_0
+- mkl=2017.0.3=0
+- mkl-service=1.1.2=py36_3
+- nbconvert=5.2.1=py36_0
+- nbformat=4.3.0=py36_0
+- networkx=1.11=py36_0
+- nose=1.3.7=py36_1
+- notebook=5.0.0=py36_0
+- numpy=1.12.1=py36_0
+- opencv=3.1.0=np112py36_1
+- openssl=1.0.2l=0
+- pandas=0.20.3=py36_0
+- pandocfilters=1.4.1=py36_0
+- path.py=10.3.1=py36_0
+- pcre=8.39=1
+- pexpect=4.2.1=py36_0
+- pickleshare=0.7.4=py36_0
+- pillow=3.4.2=py36_0
+- pip=9.0.1=py36_1
+- prompt_toolkit=1.0.14=py36_0
+- protobuf=3.2.0=py36_0
+- ptyprocess=0.5.2=py36_0
+- pygments=2.2.0=py36_0
+- pygpu=0.6.9=py36_0
+- pyparsing=2.2.0=py36_0
+- pyqt=5.6.0=py36_2
+- python=3.6.2=0
+- python-dateutil=2.6.1=py36_0
+- pytz=2017.2=py36_0
+- pywavelets=0.5.2=np112py36_0
+- pyyaml=3.12=py36_0
+- pyzmq=16.0.2=py36_0
+- qt=5.6.2=2
+- qtconsole=4.3.0=py36_0
+- readline=6.2=2
+- scikit-image=0.13.0=np112py36_0
+- scikit-learn=0.19.0=np112py36_0
+- scipy=0.19.1=np112py36_0
+- setuptools=27.2.0=py36_0
+- simplegeneric=0.8.1=py36_1
+- sip=4.18=py36_0
+- six=1.10.0=py36_0
+- sqlite=3.13.0=0
+- tensorflow=1.2.1=py36_0
+- tensorflow-gpu=1.2.1=py36cuda7.5cudnn6.0_0
+- terminado=0.6=py36_0
+- testpath=0.3.1=py36_0
+- theano=0.9.0=py36_0
+- tk=8.5.18=0
+- tornado=4.5.1=py36_0
+- tqdm=4.15.0=py36_0
+- traitlets=4.3.2=py36_0
+- wcwidth=0.1.7=py36_0
+- werkzeug=0.12.2=py36_0
+- wheel=0.29.0=py36_0
+- widgetsnbextension=2.0.0=py36_0
+- xlrd=1.1.0=py36_0
+- xz=5.2.2=1
+- yaml=0.1.6=0
+- zeromq=4.1.5=0
+- zlib=1.2.8=3
+- ffmpeg=3.1.3=0
+- pip:
+  - ffmpy==0.2.2
+  - ffprobe==0.5
+  - ipython-genutils==0.2.0
+  - jupyter-client==5.1.0
+  - jupyter-console==5.1.0
+  - jupyter-core==4.3.0
+  - prompt-toolkit==1.0.14
+  - pytesseract==0.1.7
+  - sk-video==1.1.8
+prefix: /home/giancos/anaconda3/envs/Soccer-FeatureExtractor
+
