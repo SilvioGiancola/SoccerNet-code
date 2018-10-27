@@ -83,3 +83,14 @@ Please use the following script to download automatically the data:
 
 
 See [src/feature_extraction/](src/feature_extraction/) for more details.
+
+
+
+# Getting Started with [Colab](https://colab.research.google.com/notebooks/welcome.ipynb)
+
+It is possible to use Colab to work with SoccerNet on the Google Cloud.
+Colab provides a colaborative python environment in the cloud including *unlimited storage* as well as a *free Tesla K80 GPU*.
+
+To us SoccerNet on Colab, please check this [jupyter notebook](https://colab.research.google.com/drive/0B2t5TGieUKOCZlJ4RXVKc1c5UkZ1V2FPbGliSTJqVW9CSjN3).
+
+(Acknowlegments: thanks to [lamia13Alg](https://github.com/lamia13Alg) for sharing her Colab notebook)
