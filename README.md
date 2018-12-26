@@ -1,11 +1,12 @@
 # SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos
 
 ```
-@article{giancola2018soccernet,
-  title={SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos},
-  author={Giancola, Silvio and Amine, Mohieddine and Dghaily, Tarek and Ghanem, Bernard},
-  journal={arXiv preprint arXiv:1804.04527},
-  year={2018}
+@InProceedings{Giancola_2018_CVPR_Workshops,
+  author = {Giancola, Silvio and Amine, Mohieddine and Dghaily, Tarek and Ghanem, Bernard},
+  title = {SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  month = {June},
+  year = {2018}
 }
 ```
 
