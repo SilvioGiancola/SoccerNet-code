@@ -1,5 +1,14 @@
 # SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos
 
+```
+@article{giancola2018soccernet,
+  title={SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos},
+  author={Giancola, Silvio and Amine, Mohieddine and Dghaily, Tarek and Ghanem, Bernard},
+  journal={arXiv preprint arXiv:1804.04527},
+  year={2018}
+}
+```
+
 Project page: https://silviogiancola.github.io/SoccerNet/
 
 
