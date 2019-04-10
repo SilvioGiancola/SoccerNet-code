@@ -1,14 +1,32 @@
 # SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos
 
+CVPR'18 Workshop on Computer Vision in Sports
+
+Available at [openaccess.thecvf.com](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w34/Giancola_SoccerNet_A_Scalable_CVPR_2018_paper.pdf)
+
+```
+@InProceedings{Giancola_2018_CVPR_Workshops,
+  author = {Giancola, Silvio and Amine, Mohieddine and Dghaily, Tarek and Ghanem, Bernard},
+  title = {SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  month = {June},
+  year = {2018}
+}
+```
+
 Project page: https://silviogiancola.github.io/SoccerNet/
 
 
 Data available:
 - [Frames Features](https://drive.google.com/drive/folders/1qkIeQCGaHg0_CUCHvh3hQFTlq26D20Ts?usp=sharing) (119.9GB)
+[[pre-zipped]](https://drive.google.com/file/d/1FDyrfnp8dsF7cd_NyzdTHA-EFIK_TvKK/view?usp=sharing)
 - [Labels](https://drive.google.com/drive/folders/1j95bI6G8q434K22wxWRvz2ymA8FF3rei?usp=sharing) (292.9kB)
+[[pre-zipped]](https://drive.google.com/file/d/10-Y5yqH8YQ0_lvppWPMSLq6SMayuWT4E/view?usp=sharing)
 - [Commentaries](https://drive.google.com/drive/folders/1XD7Kiqw7rsmMn6fYDxN82BdlD_HfkF49?usp=sharing) (26.1MB)
+[[pre-zipped]](https://drive.google.com/file/d/1BgPwrHzuz5WDZqmll9K2koP0k0932TNW/view?usp=sharing)
 - Videos (224p and HQ): fill the [form](https://goo.gl/forms/HXsBbBw6QFMhLvj13) first (links provided after agreeing with the 
 [NDA](https://drive.google.com/file/d/1_e9oZ3rp6hHA2Hm2tjUDMBXYqVrlUKwj/view?usp=sharing)):
+
 
 
 
@@ -79,3 +97,14 @@ Please use the following script to download automatically the data:
 
 
 See [src/feature_extraction/](src/feature_extraction/) for more details.
+
+
+
+# Getting Started with [Colab](https://colab.research.google.com/notebooks/welcome.ipynb)
+
+It is possible to use Colab to work with SoccerNet on the Google Cloud.
+Colab provides a colaborative python environment in the cloud including *unlimited storage* as well as a *free Tesla K80 GPU*.
+
+To us SoccerNet on Colab, please check this [jupyter notebook](https://colab.research.google.com/drive/0B2t5TGieUKOCZlJ4RXVKc1c5UkZ1V2FPbGliSTJqVW9CSjN3).
+
+(Acknowlegments: thanks to [lamia13Alg](https://github.com/lamia13Alg) for sharing her Colab notebook)
