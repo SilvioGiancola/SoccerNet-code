@@ -5,3 +5,15 @@
 *Videos_HQ.csv
 *.h5
 */i3d-feat-extract/*
+*.mkv
+*.ini
+
+*.sh
+*.csv
+*.xlsx
+
+*__pycache__*
+# *i3d-feat-extract*
+
+*_model.ckpt*
+*_model.ipynb
