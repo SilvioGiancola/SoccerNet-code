@@ -119,7 +119,7 @@ def main(video_dir, feature_dir, imagenet_pretrained=True,overwrite=False):
         tf.logging.info('RGB checkpoint restored')
 
 
-        if ( not os.path.exists(os.path.join(feature_dir,"I3D_features_stride_0.5_Half_1.npy")) or overwrite):
+        if ( not os.path.exists(os.path.join(feature_dir,"1_I3D.npy")) or overwrite):
 
             print('going for Half 1')
             # Densely extracting PreLogit features.
@@ -139,14 +139,14 @@ def main(video_dir, feature_dir, imagenet_pretrained=True,overwrite=False):
             feat_buffer_vstack = np.array(feat_buffer)
           
             print("saving in NPY")
-            np.save(os.path.join(feature_dir,"I3D_features_stride_0.5_Half_1.npy"), feat_buffer_vstack)
+            np.save(os.path.join(feature_dir,"1_I3D.npy"), feat_buffer_vstack)
             print('Done')
         else:
             print('Half 1 already exists')
 
 
 
-        if ( not os.path.exists(os.path.join(feature_dir,"I3D_features_stride_0.5_Half_2.npy")) or overwrite):
+        if ( not os.path.exists(os.path.join(feature_dir,"2_I3D.npy")) or overwrite):
 
             print('going for Half 2')
             # Densely extracting PreLogit features.
@@ -166,7 +166,7 @@ def main(video_dir, feature_dir, imagenet_pretrained=True,overwrite=False):
            
 
             print("saving in NPY")
-            np.save(os.path.join(feature_dir,"I3D_features_stride_0.5_Half_2.npy"), feat_buffer_vstack)
+            np.save(os.path.join(feature_dir,"2_I3D.npy"), feat_buffer_vstack)
             print('Done')
 
         else:
