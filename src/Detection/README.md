@@ -1,10 +1,10 @@
-# Minute classifier
+# Action Spotting
 
 cd into the main folder of the repo `SoccerNet-code`.
 
 Run the following code to get the best model with ResNET and NetVLAD:
 
-`python src/Classification/ClassificationMinuteBased.py --training data/listgame_Train_300.npy  --validation data/listgame_Valid_100.npy --testing data/listgame_Test_100.npy --PCA --features ResNET --network VLAD`
+`python src/Detection/ClassificationSecondBased.py --testing data/listgame_Test_100.npy --model Model/ResNET_PCA_VLAD64_model.ckpt --features ResNET --network VLAD`
 
 `--features` can be 
 `ResNET`, 
@@ -22,4 +22,4 @@ Run the following code to get the best model with ResNET and NetVLAD:
 `NETFV`.
 
 More details on the parameters with 
-`python src/Classification/ClassificationMinuteBased.py --help`
+`python src/Detection/ClassificationSecondBased.py --help`
