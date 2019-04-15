@@ -1,0 +1,37 @@
+
+<div class="portfolio-modal modal fade" id="publication{{ page.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>{{ page.title }}</h2>
+                        <hr class="star-primary">
+                        <!-- <img src="img/publications/{{ page.img }}" class="img-responsive img-centered" alt="{{ page.alt }}"> -->
+                        
+                        <div class="modal-body"  style="text-align: justify">
+                            <iframe width="670" height="377" src="https://www.youtube.com/embed/{{ page.yt_link }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="modal-body"  style="text-align: justify">
+                            {{ page.content }}
+                        </div>
+
+                        <ul class="list-inline item-details">
+                            <li>Date:       <strong>{{ page.project-date }}</strong></li>
+                            <li>Paper:      <strong><a href="{{ page.paper_link }}" target="_blank">     {{ page.paper }}     </a></strong></li>
+                            <li>Conference: <strong><a href="{{ page.conference_link }}" target="_blank">{{ page.conference }}</a></strong></li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
