@@ -1,25 +1,828 @@
----
-layout: main
----
+<!DOCTYPE html>
+<html lang="en-us">
 
-<!-- 
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TrackingNet is the first large-scale dataset and benchmark for Tracking in the wild">
+  <meta name="author" content="Silvio Giancola">
+  <meta name="generator" content="Hugo 0.31.1" />
+  <title>TrackingNet</title>
+  <!-- Stylesheets -->
+  <link href="https://tracking-net.org/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="https://tracking-net.org/css/agency.css" rel="stylesheet">
+  <link href="https://tracking-net.org/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
 
-<div class="home">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css">
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  
 
-  <h1>Posts</h1>
+  <!-- Custom Fonts -->
+  <link href="https://tracking-net.org/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+  
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  
+    <link rel="shortcut icon" type="image/x-icon" href="https://tracking-net.org/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://tracking-net.org/favicon.ico">
+  
 
-</div>
- -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
 
+
+  <body id="page-top" class="index">
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="/#page-top">
+          TrackingNet
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="/#page-top"></a>
+        </li>
+
+        
+
+        
+          <li>
+            <a class="page-scroll" href="https://tracking-net.org/#motivations">Motivations</a>
+          </li>
+        
+
+        
+          <li>
+            <a class="page-scroll" href="https://tracking-net.org/#papers">Papers</a>
+          </li>
+        
+
+        
+          <li>
+            <a class="page-scroll" href="https://tracking-net.org/#about">About</a>
+          </li>
+        
+
+        
+          <li>
+            <a class="page-scroll" href="https://tracking-net.org/#team">Team</a>
+          </li>
+        
+
+        
+          <li>
+            <a class="page-scroll" href="https://tracking-net.org/#downloads">Links</a>
+          </li>
+        
+
+        
+          <li>
+            <a class="page-scroll" href="https://tracking-net.org/#contact">Contact</a>
+          </li>
+        
+
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+    <!-- Hero -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in">TrackingNet: A Large-Scale Dataset and Benchmark for Object Tracking in the Wild</div>
+      <div class="intro-heading"></div>
+      <a href="#downloads" class="page-scroll btn btn-xl">Download</a>
+    </div>
+  </div>
+</header>
+
+
+    
+      <!-- Motivations -->
+<section id="motivations">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Motivations</h2>
+        <h3 class="section-subheading text-muted">A Large-Scale Dataset and Benchmark for Object Tracking in the Wild.</h3>
+      </div>
+    </div>
+    
+      <div class="row text-center">
+        
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-images fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Large Scale Dataset</h4>
+            <p class="text-muted">&gt; 30K Video Sequences</p>
+          </div>
+        
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="far fa-plus-square fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Object Tracking</h4>
+            <p class="text-muted">&gt; 14M Bounding Boxes</p>
+          </div>
+        
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">In the Wild</h4>
+            <p class="text-muted">Diversity ensured by Youtube</p>
+          </div>
+        
+      </div>
+    
+  </div>
+</section>
+
+    
+
+    
+      <!-- papers Grid Section -->
+<section id="papers" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Papers</h2>
+        <h3 class="section-subheading text-muted">Please find here details of all our tracking papers.</h3>
+      </div>
+    </div>
+    <div class="row">
+
+      
+        <div class="col-md-4 col-sm-6 papers-item">
+          <a href="#paper1" class="papers-link" data-toggle="modal">
+            <div class="papers-hover">
+              <div class="papers-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="https://tracking-net.org/img/papers/2018-09-08-TrackingNet-preview.png" class="img-responsive" alt="">
+          </a>
+          <div class="papers-caption">
+            <h4>TrackingNet: A Large-Scale Dataset and Benchmark for Object Tracking in the Wild.</h4>
+            <p class="text-muted">ECCV&rsquo;18</p>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-6 papers-item">
+          <a href="#paper2" class="papers-link" data-toggle="modal">
+            <div class="papers-hover">
+              <div class="papers-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="https://tracking-net.org/img/papers/2017-06-08-ContextAware-preview.jpg" class="img-responsive" alt="">
+          </a>
+          <div class="papers-caption">
+            <h4>Context Aware Correlation Filter Tracking</h4>
+            <p class="text-muted">CVPR&rsquo;17</p>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-6 papers-item">
+          <a href="#paper3" class="papers-link" data-toggle="modal">
+            <div class="papers-hover">
+              <div class="papers-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="https://tracking-net.org/img/papers/2016-target-response-adaptation-preview.png" class="img-responsive" alt="">
+          </a>
+          <div class="papers-caption">
+            <h4>Target Response Adaptation for Correlation Filter Tracking</h4>
+            <p class="text-muted">ECCV&rsquo;16</p>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-sm-6 papers-item">
+          <a href="#paper4" class="papers-link" data-toggle="modal">
+            <div class="papers-hover">
+              <div class="papers-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            
+            <img src="https://tracking-net.org/img/papers/2015-10-Adaptive-Kernelized-Correlation-Filters-preview.jpg" class="img-responsive" alt="">
+          </a>
+          <div class="papers-caption">
+            <h4>Multi-Template Scale-Adaptive Kernelized Correlation Filters</h4>
+            <p class="text-muted">ICCVW&rsquo;15</p>
+          </div>
+        </div>
+      
+
+    </div>
+  </div>
+</section>
+
+    
+
+    
+      <!-- About Section -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">About</h2>
+        <h3 class="section-subheading text-muted">Learn more about our story.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+
+          
+            <li >
+              <div class="timeline-image">
+                
+                <img class="img-circle img-responsive" src="https://tracking-net.org/img/about/iccv2015.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Dec&#39; 2015</h4>
+                  <h4 class="subheading">Paper Accepted in ICCVW&rsquo;15</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Multi-Template Scale Adaptive Kernelized Correlation Filters paper presented in <a href="http://pamitc.org/iccv15/">ICCVW&rsquo;15</a></p>
+                </div>
+              </div>
+            </li>
+          
+            <li class="timeline-inverted" >
+              <div class="timeline-image">
+                
+                <img class="img-circle img-responsive" src="https://tracking-net.org/img/about/eccv2016.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Oct&#39; 2016</h4>
+                  <h4 class="subheading">Paper accepted in ECCV&rsquo;16 as Spotlight</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Target Response Adaptation for Correlation Filter Tracking paper presented as spotlight in <a href="http://www.eccv2016.org/">ECCV&rsquo;16</a></p>
+                </div>
+              </div>
+            </li>
+          
+            <li >
+              <div class="timeline-image">
+                
+                <img class="img-circle img-responsive" src="https://tracking-net.org/img/about/cvpr2017.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>July 2017</h4>
+                  <h4 class="subheading">Paper accepted in CVPR&rsquo;17 as Oral</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Context-Aware Correlation Filter Tracking paper presented as oral in <a href="http://cvpr2017.thecvf.com/">CVPR&rsquo;17</a></p>
+                </div>
+              </div>
+            </li>
+          
+            <li class="timeline-inverted" >
+              <div class="timeline-image">
+                
+                <img class="img-circle img-responsive" src="https://tracking-net.org/img/about/eccv2018.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Sept&#39; 2018</h4>
+                  <h4 class="subheading">TrackingNet Release</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">An early version of TrackingNet was published and demoed as a tracking benchmarking tool in <a href="https://eccv2018.org/">ECCV&rsquo;18</a></p>
+                </div>
+              </div>
+            </li>
+          
+
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>Be part<br>of our<br>story!</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+    
+      <!-- Team Section -->
+<section id="team" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Our amazing team</h2>
+        <h3 class="section-subheading text-muted ">We all work at King Abdullah University of Science and Technology (<a href="https://www.kaust.edu.sa/en">KAUST</a>).</h3>
+      </div>
+    </div>
+    <div class="row flexbox">
+      
+        <div class="col-sm-4 col">
+          <div class="team-member">
+            
+            <img src="https://tracking-net.org/img/team/Mueller_135px.png" class="img-responsive img-circle" alt="Matthias Mueller">
+            <h3>Matthias Mueller</h3>
+
+            
+            <h4>PhD Student</h4>
+            
+            
+
+            
+
+            
+
+            <ul class="list-inline social-buttons">
+              
+                <li><a href="mailto:matthias.mueller.2@kaust.edu.sa"><i class="fa fa-envelope"></i></a></li>
+              
+                <li><a href="https://scholar.google.com/citations?user=AeMLOMEAAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a></li>
+              
+                <li><a href="https://www.linkedin.com/in/matthias-m%C3%BCller-10208757/"><i class="fab fa-linkedin"></i></a></li>
+              
+            </ul>
+
+            
+
+          </div>
+        </div>
+      
+        <div class="col-sm-4 col">
+          <div class="team-member">
+            
+            <img src="https://tracking-net.org/img/team/Bibi_135px.png" class="img-responsive img-circle" alt="Adel Bibi">
+            <h3>Adel Bibi</h3>
+
+            
+            <h4>PhD Student</h4>
+            
+            
+
+            
+
+            
+
+            <ul class="list-inline social-buttons">
+              
+                <li><a href="mailto:adel.bibi@kaust.edu.sa"><i class="fa fa-envelope"></i></a></li>
+              
+                <li><a href="https://scholar.google.com/citations?user=Q4j2laYAAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a></li>
+              
+                <li><a href="https://www.linkedin.com/in/adel-bibi-ba3671ab"><i class="fab fa-linkedin"></i></a></li>
+              
+            </ul>
+
+            
+
+          </div>
+        </div>
+      
+        <div class="col-sm-4 col">
+          <div class="team-member">
+            
+            <img src="https://tracking-net.org/img/team/Giancola_135px.png" class="img-responsive img-circle" alt="Silvio Giancola">
+            <h3>Silvio Giancola</h3>
+
+            
+            <h4>Post Doctoral Fellow</h4>
+            
+            
+
+            
+
+            
+
+            <ul class="list-inline social-buttons">
+              
+                <li><a href="mailto:silvio.giancola@kaust.edu.sa"><i class="fa fa-envelope"></i></a></li>
+              
+                <li><a href="https://scholar.google.com/citations?user=2kq5Zl0AAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a></li>
+              
+                <li><a href="https://www.linkedin.com/in/silvio-giancola"><i class="fab fa-linkedin"></i></a></li>
+              
+            </ul>
+
+            
+
+          </div>
+        </div>
+      
+        <div class="col-sm-4 col">
+          <div class="team-member">
+            
+            <img src="https://tracking-net.org/img/team/Alsubaihi_135px.png" class="img-responsive img-circle" alt="Salman Alsubaihi">
+            <h3>Salman Alsubaihi</h3>
+
+            
+            <h4>Master Student</h4>
+            
+            
+
+            
+
+            
+
+            <ul class="list-inline social-buttons">
+              
+                <li><a href="mailto:salman.alsubaihi@kaust.edu.sa"><i class="fa fa-envelope"></i></a></li>
+              
+            </ul>
+
+            
+
+          </div>
+        </div>
+      
+        <div class="col-sm-4 col">
+          <div class="team-member">
+            
+            <img src="https://tracking-net.org/img/team/Ghanem_135px.png" class="img-responsive img-circle" alt="Bernard Ghanem">
+            <h3>Bernard Ghanem</h3>
+
+            
+            <h4>Associate Professor</h4>
+            
+            
+
+            
+
+            
+
+            <ul class="list-inline social-buttons">
+              
+                <li><a href="mailto:bernard.ghanem@kaust.edu.sa"><i class="fa fa-envelope"></i></a></li>
+              
+                <li><a href="https://scholar.google.com/citations?user=rVsGTeEAAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a></li>
+              
+                <li><a href="https://www.linkedin.com/in/bernardghanem/"><i class="fab fa-linkedin"></i></a></li>
+              
+            </ul>
+
+            
+
+          </div>
+        </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p class="large text-muted"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+    
+      <!-- Download Aside -->
+<section class="downloads" id="downloads">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Useful Links</h2>
+        <h3 class="section-subheading text-muted "></h3>
+      </div>
+    </div>
+    <div class="row flexbox flexbox-center">
+
+      
+        <div class="col-md-3 col-sm-6 col">
+          <a href="https://github.com/SilvioGiancola/TrackingNet-devkit" class="page-scroll btn btn-xl" target="_blank">Development Kit</a>
+        </div>
+      
+        <div class="col-md-3 col-sm-6 col">
+          <a href="http://eval.tracking-net.org" class="page-scroll btn btn-xl" target="_blank">Evaluation Server</a>
+        </div>
+      
+        <div class="col-md-3 col-sm-6 col">
+          <a href="https://join.slack.com/t/tracking-net/shared_invite/enQtNTYxNTEyMjYwMTQ0LTQ1YWE5MzVjYjU0MmMwMTU0MjgxZTJiOTQ1MzJiODU1M2Y0Y2FlNGRkMmZmOTVmNTdjMzIyYmE3MDdmMjk2ODA" class="page-scroll btn btn-xl" target="_blank">Reach us on SLACK</a>
+        </div>
+      
+
+    </div>
+  </div>
+</section>
+
+    
+
+    
+
+    
+      
+<!-- Contact Section -->
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+
+        
+        <h2 class="section-heading">Contact us</h2>
+        
+
+        
+        <h3 class="section-subheading text-muted">Contact us here for any inquiry. </br> You can also follow us on <a href="https://join.slack.com/t/tracking-net/shared_invite/enQtNTYxNTEyMjYwMTQ0LTQ1YWE5MzVjYjU0MmMwMTU0MjgxZTJiOTQ1MzJiODU1M2Y0Y2FlNGRkMmZmOTVmNTdjMzIyYmE3MDdmMjk2ODA">SLACK</a>.</h3>
+        
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form
+          method="POST"
+          id="contactForm" action="//formspree.io/silvio.giancola@kaust.edu.sa">
+
+          <fieldset>
+            <div class="row">
+              <div class="col-md-6">
+
+                
+                <div class="form-group">
+                  <input class="form-control" id="name" required="required" type="text" name="name" placeholder="Your Name *" data-validation-error-msg="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                
+
+                
+                <div class="form-group">
+                  <input class="form-control" id="email" required="required" type="email" name="email" placeholder="Your Email *" data-validation-error-msg="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                
+
+                
+              </div>
+
+              <div class="col-md-6">
+              
+                <div class="form-group">
+                  <textarea class="form-control" id="message" required="required" name="message" placeholder="Your Message *" data-validation-error-msg="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+                
+
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div class="text-success" id="success" style="display:none;">
+                  
+                    Thank you for contacting us.
+                  
+                </div>
+                <div class="captcha-error text-danger" id="captcha-error">
+                  
+                </div>
+                <div class="text-danger" id="error" style="display:none;">
+                  
+                    Message could not be send. Please contact us at silvio.giancola@kaust.edu.sa instead.
+                  
+                </div><br />
+                
+                  <button type="submit" value="Submit" class="btn btn-xl">
+                    Send message
+                  </button>
+                
+              </div>
+            </div>
+            
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+    
+      <!-- Footer section -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Published under the Apache License 2.0.</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+
+          
+
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+          
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    
+      <!-- papers Modals -->
+
+  <div class="papers-modal modal fade" id="paper1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>TrackingNet: A Large-Scale Dataset and Benchmark for Object Tracking in the Wild.</h2>
+              <p class="item-intro text-muted"><strong>Matthias Mueller&#42;, Adel Bibi&#42;, Silvio Giancola&#42;</strong>, Salman Al-Subaihi and Bernard Ghanem</p>
+              
+              <img class="img-responsive img-centered" src="https://tracking-net.org/img/papers/2018-09-08-TrackingNet.png" alt="">
+              <p>Despite the numerous developments in object tracking, further development of current tracking algorithms is limited by small and mostly saturated datasets. As a matter of fact, data-hungry trackers based on deep-learning currently rely on object detection datasets due to the scarcity of dedicated large-scale tracking datasets. In this work, we present TrackingNet, the first large-scale dataset and benchmark for object tracking in the wild. We provide more than 30K videos with more than 14 million dense bounding box annotations. Our dataset covers a wide selection of object classes in broad and diverse context. By releasing such a large-scale dataset, we expect deep trackers to further improve and generalize. In addition, we introduce a new benchmark composed of 500 novel videos, modeled with a distribution similar to our training dataset. By sequestering the annotation of the test set and providing an online evaluation server, we provide a fair benchmark for future development of object trackers. Deep trackers fine-tuned on a fraction of our dataset improve their performance by up to 1.6% on OTB100 and up to 1.7% on TrackingNet Test. We provide an extensive benchmark on TrackingNet by evaluating more than 20 trackers. Our results suggest that object tracking in the wild is far from being solved.</p>
+              <ul class="list-inline">
+                <li>Date: 2018-09-09</li>
+                <li>Paper: <a href="https://ivul.kaust.edu.sa/Documents/Publications/2018/TrackingNet%20A%20Large%20Scale%20Dataset%20and%20Benchmark%20for%20Object%20Tracking%20in%20the%20Wild.pdf">ECCV&#39;18</a></li>
+                <li>Category: Dataset</li>
+              </ul>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="papers-modal modal fade" id="paper2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Context Aware Correlation Filter Tracking</h2>
+              <p class="item-intro text-muted">Matthias Mueller, Neil Smith and Bernard Ghanem.</p>
+              
+              <img class="img-responsive img-centered" src="https://tracking-net.org/img/papers/2017-06-08-ContextAware.jpg" alt="">
+              <p>Correlation filter (CF) based trackers have recently gained a lot of popularity due to their impressive performance on benchmark datasets, while maintaining high frame rates. A significant amount of recent research focuses on the incorporation of stronger features for a richer representation of the tracking target. However, this only helps to discriminate the target from background within a small neighborhood. In this paper, we present a framework that allows the explicit incorporation of global context within CF trackers. We reformulate the original optimization problem and provide a closed form solution for single and multidimensional features in the primal and dual domain. Extensive experiments demonstrate that this framework significantly improves the performance of many CF trackers with only a modest impact on frame rate.</p>
+              <ul class="list-inline">
+                <li>Date: 2017-06-08</li>
+                <li>Paper: <a href="https://ivul.kaust.edu.sa/Documents/Publications/2017/Context-Aware%20Correlation%20Filter%20Tracking.pdf">CVPR&#39;17</a></li>
+                <li>Category: Tracker</li>
+              </ul>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="papers-modal modal fade" id="paper3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Target Response Adaptation for Correlation Filter Tracking</h2>
+              <p class="item-intro text-muted">Adel Bibi, Matthias Mueller and Bernard Ghanem</p>
+              
+              <img class="img-responsive img-centered" src="https://tracking-net.org/img/papers/2016-target-response-adaptation.png" alt="">
+              <p>Most correlation filter (CF) based trackers utilize the circulant structure of the training data to learn a linear filter that best regresses this data to a hand-crafted target response. These circularly shifted patches are only approximations to actual translations in the image, which become unreliable in many realistic tracking scenarios including fast motion, occlusion, etc. In these cases, the traditional use of a single centered Gaussian as the target response impedes tracker performance and can lead to unrecoverable drift. To circumvent this major drawback, we propose a generic framework that can adaptively change the target response from frame to frame, so that the tracker is less sensitive to the cases where circular shifts do not reliably approximate translations. To do that, we reformulate the underlying optimization to solve for both the filter and target response jointly, where the latter is regularized by measurements made using actual translations. This joint problem has a closed form solution and thus allows for multiple templates, kernels, and multi-dimensional features. Extensive experiments on the popular OTB100 benchmark [19] show that our target adaptive framework can be combined with many CF trackers to realize significant overall performance improvement (ranging from 3%-13.5% in precision and 3.2%-13% in accuracy), especially in categories where this adaptation is necessary (e.g. fast motion, motion blur, etc.). ​</p>
+              <ul class="list-inline">
+                <li>Date: 2016-10-08</li>
+                <li>Paper: <a href="https://ivul.kaust.edu.sa/Documents/Publications/2017/Context-Aware%20Correlation%20Filter%20Tracking.pdf">ECCV&#39;16</a></li>
+                <li>Category: Tracker</li>
+              </ul>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="papers-modal modal fade" id="paper4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>Multi-Template Scale-Adaptive Kernelized Correlation Filters</h2>
+              <p class="item-intro text-muted">Adel Bibi and Bernard Ghanem</p>
+              
+              <img class="img-responsive img-centered" src="https://tracking-net.org/img/papers/2015-10-Adaptive-Kernelized-Correlation-Filters.jpg" alt="">
+              <p>This paper identifies the major drawbacks of a very computationally efficient and state-of-the-art-tracker known as the Kernelized Correlation Filter (KCF) tracker. These drawbacks include an assumed fixed scale of the target in every frame, as well as, a heuristic update strategy of the filter taps to incorporate historical tracking information (i.e. simple linear combination of taps from the previous frame). In our approach, we update the scale of the tracker by maximizing over the posterior distribution of a grid of scales. As for the filter update, we prove and show that it is possible to use all previous training examples to update the filter taps very efficiently using fixed-point optimization. We validate the efficacy of our approach on two tracking datasets, VOT2014 and VOT2015.</p>
+              <ul class="list-inline">
+                <li>Date: 2015-12-11</li>
+                <li>Paper: <a href="https://ivul.kaust.edu.sa/Documents/Publications/2015/Multi-Template%20Scale-Adaptive%20Kernelized%20Correlation%20Filters.pdf">ICCVW&#39;15</a></li>
+                <li>Category: Tracker</li>
+              </ul>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+    <!-- jQuery -->
+<script src="https://tracking-net.org/js/jquery-v3.3.1/jquery.min.js"></script>
+
+<!-- Bootstrap Core -->
+<script src="https://tracking-net.org/js/bootstrap-v3.3.7/bootstrap.min.js"></script>
+
+<!-- Form Validation -->
+<script src="https://tracking-net.org/js/jquery.form-validator-v2.3.44/jquery.form-validator.min.js"></script>
+
+<!-- Custom Theme -->
+<script src="https://tracking-net.org/js/agency.js"></script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-99166333-5', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
