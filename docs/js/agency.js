@@ -1,39 +1,18 @@
-// Smooth scrolling via animate()
-$(document).ready(function(){
-  if ($('.g-recaptcha')) {
-    checkReCaptcha()
-  }
+/*!
+ * Start Bootstrap - Agnecy Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
 
-  $("a").on('click', function(event) {
-    if (this.hash && window.location.pathname == "/") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-
-  // Navigation change on scroll
-  var maxOffset = 300;
-  $(window).scroll(function() {
-    if ($(window).scrollTop() >= maxOffset) {
-      $('.navbar-default').addClass('navbar-shrink');
-    }
-    else {
-      $('.navbar-default').removeClass('navbar-shrink');
-    }
-  });
-
-  var maxOffset = 300;
-  if ($(window).scrollTop() >= maxOffset) {
-    $('.navbar-default').addClass('navbar-shrink');
-  }
-  else {
-    $('.navbar-default').removeClass('navbar-shrink');
-  }
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
 });
 
 // Highlight the top nav as scrolling occurs
@@ -46,37 +25,13 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-// Async contact form
-$('form[id=contactForm]').submit(function(){
-  $.post($(this).attr('action'), $(this).serialize(), function(data, textStatus, jqXHR){
-    $('form[id=contactForm] #success').hide();
-    $('form[id=contactForm] #error').hide();
-    if (jqXHR.status == 200) {
-      $('form[id=contactForm] #success').show();
-    }}, 'json').fail(function(){
-      $('form[id=contactForm] #success').hide();
-      $('form[id=contactForm] #error').hide();
-      $('form[id=contactForm] #error').show();
-  });
-  return false;
+$('div.modal').on('show.bs.modal', function() {
+	var modal = this;
+	var hash = modal.id;
+	window.location.hash = hash;
+	window.onhashchange = function() {
+		if (!location.hash){
+			$(modal).modal('hide');
+		}
+	}
 });
-
-// Contact form validation
-$.validate({
-  modules : 'html5, toggleDisabled'
-});
-
-function onContactCaptcha($form) {
-  $('form#contactForm').submit();
-}
-
-function checkReCaptcha() {
-  if (typeof grecaptcha === "undefined") {
-    $('.captcha-error').show();
-    setTimeout(checkReCaptcha, 200);
-  } else {
-    $('.captcha-error').hide();
-    $('.g-recaptcha-filler').hide();
-    $('.g-recaptcha').attr('disabled', true);
-  }
-}
