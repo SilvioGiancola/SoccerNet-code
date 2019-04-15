@@ -85,7 +85,7 @@ if __name__ == '__main__':
     parser.add_argument('--GPU',        required=False, type=int,   default=-1,     help='ID of the GPU to use' )
     parser.add_argument('--PCA',        required=False, action="store_true",        help='use PCA version of the features')
     parser.add_argument('--network',    required=False, type=str,   default="",     help='Select the type of network (CNN, MAX, AVERAGE, VLAD)')
-    parser.add_argument('--tflog',      required=False, type=str,   default='logs_butta',   help='folder for tensorBorad output')
+    parser.add_argument('--tflog',      required=False, type=str,   default='Model',   help='folder for tensorBoard output')
     parser.add_argument('--loglevel',   required=False, type=str,   default='INFO', help='logging level')
     parser.add_argument('--imbalance',  required=False, type=str,   default="No",   help='how to cope with imbalance dataset')
     # parser.add_argument('--norm',       required=False, type=str,   default="No",   help='weights normalization over the largest or the smallest class')

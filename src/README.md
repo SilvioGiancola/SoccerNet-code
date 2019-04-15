@@ -57,7 +57,16 @@ Please use the following script to download automatically the data:
 
 
 
-# Code for Features Extraction from videos
 
+# Features Extraction from videos
 
-See [feature_extraction/](feature_extraction/) for more details.
+See [src/feature_extraction](feature_extraction/) for more details.
+
+# Action Classification
+
+See [src/Classification](Classification/) for more details.
+
+# Action Detection/Spotting
+
+See [src/Detection](Detection/) for more details.
+
