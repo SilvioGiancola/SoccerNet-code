@@ -1,5 +1,7 @@
 # SoccerNet: A Scalable Dataset for Action Spotting in Soccer Videos
 
+## [DEPRECATED] Please visit https://github.com/SilvioGiancola/SoccerNetv2-DevKit for an updated version of that repository
+
 CVPR'18 Workshop on Computer Vision in Sports
 
 Available at [openaccess.thecvf.com](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w34/Giancola_SoccerNet_A_Scalable_CVPR_2018_paper.pdf)
